@@ -1,0 +1,23 @@
+{
+  "name": "farosebastien_3_04112021",
+  "version": "1.0.0",
+  "description": "\"\"",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./main.scss:./css/style.css",
+    "sassrestaurants": "sass --watch./ ./css/restaurants.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/sam2289/farosebastien_3_04112021.git"
+  },
+  "keywords": [
+    "\"\""
+  ],
+  "author": "\"\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/sam2289/farosebastien_3_04112021/issues"
+  },
+  "homepage": "https://gitlab.com/sam2289/farosebastien_3_04112021#readme"
+}
