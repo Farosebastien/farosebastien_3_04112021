@@ -3,76 +3,104 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./public/css/style.css">
-        <title>accueil</title>
+        <title>Accueil</title>
     </head>
     <body>
         <div class="loader">
         </div>
         <main class="container">
-            <header>
-                    
+            <header class="head">
+                <img class="head--img" src="src/public/img/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+                <input class="head--input" type="text" name="recherche" placeholder="Paris, Belleville">
+                <aside class="presentation">
+                    <h1 class="presentation--title">Reservez le menu qui vous convient</h1>
+                    <p class="presentation--article">Decouvrez des restaurants d'exception, selectionnés par nos soins.</p>
+                    <button class="presentation--button" type="button" style="cursor: pointer;">
+                        <span class="presentation--button text">Explorer nos restaurants</span>
+                    </button>
+                </aside>
             </header>
-            <nav>
-                <h3>
-
-                </h3>
-                <div>
-
+            <nav class="nav">
+                <h2 class="nav--title">Fonctionnement</h2>
+                <div class="nav--bar">
+                    <span class="nav-bar number">1</span>
+                    <i class="nav--bar icon"></i>
+                    <p class="nav--bar text">Choisissez un restaurant</p>
                 </div>
-                <div>
-
+                <div class="nav--bar">
+                    <span class="nav-bar number">2</span>
+                    <i class="nav--bar icon"></i>
+                    <p class="nav--bar text">Composez votre menu</p>
                 </div>
-                <div>
-
+                <div class="nav--bar">
+                    <span class="nav-bar number">3</span>
+                    <i class="nav--bar icon"></i>
+                    <p class="nav--bar text">Dégustez au restaurant</p>
                 </div>
             </nav>
-            <section>
-                <div>
-                        <h3>
-                            
-                        </h3>
-                    <div>
-                        <a href="#">
-                            <img src="#" alt="">
+            <section class="section">
+                <div class="restaurant">
+                    <h2 class="restaurant--title">Restaurants</h2>
+                    <div class="restaurant--cards">
+                        <a class="card1" href="la_palette_du_gout.html">
+                            <img class="card1--img" src="src/public/img/restaurants/la_palette_du_gout.jpg" alt="la palette du goût">
+                            <span class="card1--new">Nouveau</span>
+                            <h3 class="card1--title">La palette du goût</h3>
+                            <p class="card1--location">Ménilmontant</p>
+                            <i class="card1--icon"></i>
                         </a>
                     </div>
                     <div>
-                        <a href="#">
-                            <img src="#" alt="">
+                        <a class="card2" href="la_note_enchantee.html">
+                            <img class="card2--img" src="src/public/img/restaurants/la_note_enchantee.jpg" alt="la note enchantée">
+                            <span class="card2--new">Nouveau</span>
+                            <h3 class="card2--title">La note enchantée</h3>
+                            <p class="card2--location">Charonne</p>
+                            <i class="card2--icon"></i>
                         </a>
                     </div>
                     <div>
-                        <a href="#">
-                            <img src="#" alt="">
+                        <a class="card3" href="a_la_francaise.html">
+                            <img class="card3--img" src="src/public/img/restaurants/a_la_francaise.jpg" alt="a la francaise">
+                            <span class="card3--new">Nouveau</span>
+                            <h3 class="card3--title">&Aacute; la française</h3>
+                            <p class="card3--location">Cité Rouge</p>
+                            <i class="card3--icon"></i>
                         </a>
                     </div>
                     <div>
-                        <a href="#">
-                            <img src="#" alt="">
+                        <a class="card4" href="le_delice_des_sens.html">
+                            <img class="card4--img" src="src/public/img/restaurants/le_delice_des_sens.jpg" alt="le delice des sens">
+                            <span class="card4--new">Nouveau</span>
+                            <h3 class="card4--title">Le délice des sens</h3>
+                            <p class="card4--location">Folie-Méricourt</p>
+                            <i class="card4--icon"></i>
                         </a>
                     </div>
                 </div>
             </section>
-            <footer>
-                <h2>
-                        
-                </h2>
-                <div>
-                    <a href="#">
-
+            <footer class="footer">
+                <img class="footer--img" src="src/public/img/logo/ohmyfood.png" alt="logo ohmyfood">
+                <div class="footer--line1">
+                    <a class="footer--link1" href="#">
+                        <i class="link1--icon"></i>
+                        <p class="link1--text">Proposer un restaurant</p>
                     </a>
                 </div>
-                <div>
-                    <a href="#">
-
+                <div class="footer--line2">
+                    <a class="footer--link2" href="#">
+                        <i class="link2--icon"></i>
+                        <p class="link2--text">Devenir partenaire</p>
                     </a>
                 </div>
-                <p><a href="#"></a></p>
-                <p><a href="#"></a></p>
+                <a class="footer--link3" href="#">
+                    <p class="link3--text">Mentions légales</p>
+                </a>
+                <a class="footer--link4" href="#">
+                    <p class="link4--text">Contact</p>
+                </a>
             </footer>
-            <script>
-
-            </script>
+            <script src="https://kit.fontawesome.com/5b77b1eedb.js" crossorigin="anonymous"></script>
         </main>
     </body>
 </html>
