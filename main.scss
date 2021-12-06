@@ -4,6 +4,7 @@ $tertiary: #99E2D0;
 $input-backcolor: #EAEAEA;
 $backcolor: #F6F6F6;
 $naviconcolor: #7E7E7E;
+$footercolor: #353535;
 
 $breakpoints: (
     desktop: 1300px,
@@ -14,6 +15,10 @@ $breakpoints: (
 
 @mixin font {
     font-family: 'roboto', sans-serif;
+}
+
+@mixin fontlogo {
+    font-family: 'Shrikhand', cursive;
 }
 
 @mixin mobile-only {
@@ -30,6 +35,10 @@ $breakpoints: (
 
 body{
     margin: 0px;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 
 #container{
@@ -70,16 +79,17 @@ body{
 
 .fas.fa-map-marker-alt{
     @include mobile-only(){
-
         padding: 0px 20px 0px 105px;
     }
 }
 
 ::placeholder{
-    color: black;
-    font-size: 12px;
-    font-weight: bold;
-    @include font();
+    @include mobile-only(){
+        color: black;
+        font-size: 12px;
+        font-weight: bold;
+        @include font();
+    }
 }
 
 .presentation{
@@ -115,7 +125,7 @@ body{
             border-radius: 25px 25px 25px 25px;
             box-shadow: 0 2px 5px darken($color: $input-backcolor, $amount: 20%);
             &:active{
-                box-shadow: 0 4px 5px darken($color: $input-backcolor, $amount: 30%);
+                box-shadow: 0 4px 5px darken($color: $input-backcolor, $amount: 40%);
                 background: linear-gradient(lighten($color: $secondary, $amount: 5%), lighten($color: $primary, $amount: 5%));
             }
         }
@@ -124,7 +134,7 @@ body{
 .nav{
     @include mobile-only(){
         width: 100%;
-        height: 440px;
+        height: 370px;
         margin: 45px 0px 0px 20px;
         &--title{
             @include font();
@@ -159,14 +169,65 @@ body{
                 font-size: 16px;
                 margin-left: 25px;
             }
+            &:active{
+                background-color: lighten($color: $primary, $amount: 35%);
+                box-shadow: 0 4px 5px darken($color: $input-backcolor, $amount: 40%);
+                &>i{
+                    color: $primary;
+                }
+
+            }
         }
     }
 }
 
 .fas.fa-list-ul, .fas.fa-mobile-alt, .fas.fa-store{
-    font-size: 20px;
-    margin-left: 20px;
-    color: $naviconcolor;
+    @include mobile-only(){
+        font-size: 20px;
+        margin-left: 20px;
+        color: $naviconcolor;
+    }
 }
 
+.section{
+    @include mobile-only(){
+        width: 100%;
+        height: 1225px;
+        background-color: $backcolor;
+    }
+}
+
+.restaurant{
+    @include mobile-only(){
+        margin-left: 20px;
+        &--title{
+            @include font();
+            font-size: 20px;
+            margin: 0px;
+            padding: 55px 0px 25px 0px;
+        }
+        &--cards{
+            width: 335px;
+            height: 250px;
+        }
+    }
+}
+
+.footer{
+    @include mobile-only() {
+        width: 100%;
+        height: 200px;
+        background-color: $footercolor;
+        &--logo{
+            @include fontlogo();
+            font-size: 18px;
+            margin: 0px 0px 0px 25px;
+            padding-top: 25px;
+            color: white;
+        }
+        &--link1{
+            
+        }
+    }
+}
 
