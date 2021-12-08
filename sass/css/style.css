@@ -85,8 +85,10 @@ a {
   border: 1px hidden;
   border-radius: 25px 25px 25px 25px;
   box-shadow: 0 2px 5px #b7b7b7;
+  transition: all 250ms ease-in-out;
 }
 .presentation--button:hover {
+  transform: scale(1.1);
   box-shadow: 0 4px 5px #848484;
   background: linear-gradient(#ff93e1, #a16be0);
 }
@@ -133,12 +135,13 @@ a {
   width: 31%;
   height: 72px;
   cursor: pointer;
-  margin: 25px 10px 0px 20px;
+  margin: 25px 15px 0px 25px;
   background-color: #F6F6F6;
   border: 1px hidden;
   border-radius: 18px 18px 18px 18px;
   box-shadow: 0 2px 5px #b7b7b7;
   align-items: center;
+  transition: all 250ms ease-in-out;
 }
 @media (max-width: 759px) {
   .nav--bar {
@@ -165,6 +168,7 @@ a {
   margin-left: 25px;
 }
 .nav--bar:hover {
+  transform: scale(1.02);
   background-color: #f2eafb;
   box-shadow: 0 4px 5px #848484;
 }
@@ -255,8 +259,10 @@ a {
   border-radius: 12px 12px 12px 12px;
   margin-bottom: 15px;
   box-shadow: 0 2px 5px #b7b7b7;
+  transition: all 250ms;
 }
 .restaurant--cards:hover {
+  transform: scale(1.02);
   box-shadow: 0 4px 5px #848484;
 }
 @media screen and (min-width: 1300px) {
@@ -305,15 +311,24 @@ a {
   top: -55px;
 }
 .card--icon {
+  width: 20px;
   font-size: 18px;
   position: relative;
   left: 85%;
   top: -110px;
+  cursor: pointer;
 }
-
-.fas.fa-heart {
-  font-size: 18px;
-  visibility: hidden;
+.card--icon2 {
+  position: absolute;
+  left: 0px;
+  opacity: 0;
+  background: -webkit-linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 500ms ease-in-out;
+}
+.card--icon:hover > :last-child {
+  opacity: 1;
 }
 
 .footer {
