@@ -9,15 +9,12 @@ a {
 
 @media (max-width: 759px) {
   #container {
-    max-width: 100%;
-    height: 100%;
     min-width: 375px;
   }
 }
 
 @media (max-width: 759px) {
   .head {
-    width: 100%;
     height: 360px;
     display: flex;
     flex-direction: column;
@@ -34,6 +31,7 @@ a {
     box-shadow: inset 0 2px 5px #cbcbcb;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   .head--inputfield {
     border: none;
@@ -44,7 +42,7 @@ a {
 
 @media (max-width: 759px) {
   .fas.fa-map-marker-alt {
-    padding: 0px 20px 0px 105px;
+    padding: 0px 20px 0px 55px;
   }
 }
 
@@ -99,7 +97,6 @@ a {
 
 @media (max-width: 759px) {
   .nav {
-    width: 100%;
     height: 370px;
     margin: 45px 0px 0px 20px;
   }
@@ -110,7 +107,7 @@ a {
   }
   .nav--bar {
     display: flex;
-    width: 324px;
+    width: 90%;
     height: 72px;
     margin: 25px 0px 0px 12px;
     background-color: #F6F6F6;
@@ -156,9 +153,14 @@ a {
 
 @media (max-width: 759px) {
   .section {
-    width: 100%;
     height: 1225px;
     background-color: #F6F6F6;
+  }
+  .section--title {
+    font-family: "roboto", sans-serif;
+    font-size: 20px;
+    margin: 0px 0px 0px 20px;
+    padding: 55px 0px 25px 0px;
   }
 }
 
@@ -166,14 +168,8 @@ a {
   .restaurant {
     margin-left: 20px;
   }
-  .restaurant--title {
-    font-family: "roboto", sans-serif;
-    font-size: 20px;
-    margin: 0px;
-    padding: 55px 0px 25px 0px;
-  }
   .restaurant--cards {
-    width: 335px;
+    width: 94%;
     height: 250px;
     background-color: white;
     border: 1px hidden;
@@ -187,14 +183,11 @@ a {
 }
 
 @media (max-width: 759px) {
-  .card {
-    width: 335px;
-    height: 250px;
-  }
   .card--img {
-    width: 335px;
+    width: 100%;
     height: 175px;
     border-radius: 12px 12px 0px 0px;
+    object-fit: cover;
   }
   .card--new {
     display: flex;
@@ -207,7 +200,7 @@ a {
     background-color: #99E2D0;
     color: #32b091;
     position: relative;
-    left: 240px;
+    left: 70%;
     top: -165px;
   }
   .card--title {
@@ -227,7 +220,7 @@ a {
   .card--icon {
     font-size: 18px;
     position: relative;
-    left: 290px;
+    left: 85%;
     top: -110px;
   }
 }
@@ -239,7 +232,6 @@ a {
 
 @media (max-width: 759px) {
   .footer {
-    width: 100%;
     height: 200px;
     background-color: #353535;
   }
