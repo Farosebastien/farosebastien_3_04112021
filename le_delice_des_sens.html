@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=335" />
+        <meta name="viewport" content="width=375" />
         <meta charset="utf-8">
-        <link rel="stylesheet" href="./public/css/restaurants.css">
+        <link rel="stylesheet" href="./sass/css/style.css">
+        <link rel="stylesheet" href="./sass/css/restaurants.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -14,14 +15,16 @@
         <main id="container"> <!--page main container-->
             <header class="head"> <!--page header-->
                 <div class="head--top">
-                    <a class="top--return" href="index.html"><i class="fas fa-arrow-left"></i></a>
-                    <img class="top--img" src="src/public/img/logo/ohmyfood@2x.svg" alt="Logo ohmyfood">
+                    <a class="head--topreturn" href="index.html"><i class="fas fa-arrow-left"></i></a>
+                    <img class="head--topimg" src="src/public/img/logo/ohmyfood@2x.svg" alt="Logo ohmyfood">
                 </div>
                 <img class="head--img" src="src/public/img/restaurants/le_delice_des_sens.jpg" alt="Le délice des sens">
             </header>
             <section class="menu"> <!--menus section-->
-                <h1 class="menu--title">Le délice des sens</h1>
-                <i class="far fa-heart"></i>
+                <header class="menu--head">
+                    <h1 class="menu--headtitle">Le délice des sens</h1>
+                    <i class="far fa-heart"></i>
+                </header>
                 <aside class="starters"> <!--starters aside-->
                     <h2 class="starters--title">ENTR&Eacute;ES</h2>
                     <article class="starters--art">
@@ -127,24 +130,26 @@
             </section>
             <footer class="footer"> <!--page footer-->
                 <h2 class="footer--logo">ohmyfood</h2>
-                <div class="footer--line1">
-                    <a class="footer--link1" href="#">
-                        <i class="fas fa-utensils"></i>
-                        <p class="link1--text">Proposer un restaurant</p>
+                <div class="footer--links">
+                    <div class="footer--line1">
+                        <a class="footer--link1" href="#">
+                            <i class="fas fa-utensils"></i>
+                            <p class="link1--text">Proposer un restaurant</p>
+                        </a>
+                    </div>
+                    <div class="footer--line2">
+                        <a class="footer--link2" href="#">
+                            <i class="fas fa-hands-helping"></i>
+                            <p class="link2--text">Devenir partenaire</p>
+                        </a>
+                    </div>
+                    <a class="footer--link3" href="#">
+                        <p class="link3--text">Mentions légales</p>
+                    </a>
+                    <a class="footer--link4" href="mailto:">
+                        <p class="link4--text">Contact</p>
                     </a>
                 </div>
-                <div class="footer--line2">
-                    <a class="footer--link2" href="#">
-                        <i class="fas fa-hands-helping"></i>
-                        <p class="link2--text">Devenir partenaire</p>
-                    </a>
-                </div>
-                <a class="footer--link3" href="#">
-                    <p class="link3--text">Mentions légales</p>
-                </a>
-                <a class="footer--link4" href="mailto:">
-                    <p class="link4--text">Contact</p>
-                </a>
             </footer>
             <script src="https://kit.fontawesome.com/5b77b1eedb.js" crossorigin="anonymous"></script>
         </main>
