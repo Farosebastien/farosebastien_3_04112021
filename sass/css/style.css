@@ -396,6 +396,9 @@ a {
   left: 70%;
   top: -165px;
 }
+.card--new__no {
+  visibility: hidden;
+}
 .card--title {
   font-family: "roboto", sans-serif;
   font-size: 18px;
