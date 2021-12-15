@@ -48,7 +48,7 @@
   justify-content: center;
   background: #F6F6F6;
   z-index: 2;
-  animation: loader 0.01s 2900ms both;
+  animation: loader 0.01s 1400ms both;
 }
 .loader--circle1 {
   position: absolute;
@@ -60,7 +60,7 @@
   border-radius: 50%;
   border-top: 4px solid #9356DC;
   opacity: 0;
-  animation: spinloader 2s ease-in-out;
+  animation: spinloader 1500ms ease-in-out;
 }
 .loader--circle2 {
   position: absolute;
@@ -72,7 +72,7 @@
   border-radius: 50%;
   border-bottom: 4px solid #FF79DA;
   opacity: 0;
-  animation: spinloader 2s ease-in-out;
+  animation: spinloader 1500ms ease-in-out;
 }
 .loader--circle3 {
   position: absolute;
@@ -84,18 +84,18 @@
   border-radius: 50%;
   border-left: 4px solid #99E2D0;
   opacity: 0;
-  animation: spinloader 2s ease-in-out;
+  animation: spinloader 1500ms ease-in-out;
 }
 .loader--logo {
   position: absolute;
   text-align: center;
   font-family: "Shrikhand", cursive;
-  width: 160px;
+  width: 180px;
   font-size: 28px;
   background: linear-gradient(#b389e7, #ffb6eb);
   border-radius: 12px;
   color: white;
-  animation: spinloaderlogo 3s ease-in-out 1;
+  animation: spinloaderlogo 1500ms ease-in-out 1;
 }
 
 body {
@@ -413,7 +413,8 @@ a {
   position: relative;
   top: -55px;
 }
-.card--icon {
+
+.icon {
   width: 20px;
   font-size: 18px;
   position: relative;
@@ -421,7 +422,8 @@ a {
   top: -110px;
   cursor: pointer;
 }
-.card--icon2 {
+
+.fas.fa-heart {
   position: absolute;
   left: 0px;
   opacity: 0;
@@ -429,18 +431,13 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.card--icon2:hover {
+.fas.fa-heart:hover {
   animation: heart-coloration 500ms ease-in-out forwards;
 }
 
 .footer {
-  height: 150px;
+  height: 200px;
   background-color: #353535;
-}
-@media (max-width: 759px) {
-  .footer {
-    height: 200px;
-  }
 }
 .footer--logo {
   font-family: "Shrikhand", cursive;
@@ -470,7 +467,7 @@ a {
   font-family: "roboto", sans-serif;
   display: flex;
   align-items: center;
-  margin: 10px 0px 0px 0px;
+  margin: 10px 0px 0px 50px;
   color: white;
 }
 @media (max-width: 759px) {
@@ -485,7 +482,7 @@ a {
   font-family: "roboto", sans-serif;
   display: flex;
   align-items: center;
-  margin: 10px 0px 0px 0px;
+  margin: 10px 0px 0px 50px;
   color: white;
 }
 @media (max-width: 759px) {
@@ -501,7 +498,7 @@ a {
   color: white;
 }
 .footer--link3 > p {
-  margin: 10px 0px 0px 15px;
+  margin: 10px 0px 0px 50px;
 }
 @media (max-width: 759px) {
   .footer--link3 > p {
@@ -513,25 +510,11 @@ a {
   color: white;
 }
 .footer--link4 > p {
-  margin: 10px 0px 0px 15px;
+  margin: 10px 0px 0px 50px;
 }
 @media (max-width: 759px) {
   .footer--link4 > p {
     margin-left: 25px;
-  }
-}
-@media (min-width: 760px) and (max-width: 1299px) {
-  .footer--links {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 15px;
-  }
-}
-@media screen and (min-width: 1300px) {
-  .footer--links {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 15px;
   }
 }
 
