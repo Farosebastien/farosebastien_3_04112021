@@ -157,7 +157,7 @@
 .starters {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 30%;
   height: 100%;
   margin: 30px 0px 0px 14px;
   animation: fadein 1s ease-in-out;
@@ -176,8 +176,12 @@
   padding-bottom: 5px;
 }
 .starters--art {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
   width: 93%;
-  height: 5%;
+  height: 72px;
   margin-top: 12px;
   border: 1px hidden;
   border-radius: 15px;
@@ -185,46 +189,72 @@
   box-shadow: 0 2px 5px #b7b7b7;
   transition: all 250ms;
 }
-@media (max-width: 759px) {
-  .starters--art {
-    height: 70px;
-  }
-}
 .starters--art:hover {
   transform: scale(1.02);
   box-shadow: 0 4px 5px #848484;
+}
+.starters--art:hover .fas.fa-check-circle {
+  transform: rotate(360deg);
+}
+.starters--art:hover .starters--price {
+  transition-duration: 502ms;
+  padding-right: 50px;
+}
+.starters--art:hover .starters--check {
+  right: -50px;
+  transform: translate(-50px);
+  opacity: 1;
+  z-index: 1;
 }
 .starters--arttitle {
   font-family: "roboto", sans-serif;
   font-size: 16px;
   margin: 15px 0px 5px 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .starters--div {
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 .starters--description {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   font-family: "roboto", sans-serif;
   font-size: 14px;
-  margin: 0px 0px 0px 10px;
+  margin: 0px 0px 10px 10px;
 }
 .starters--price {
   font-family: "roboto", sans-serif;
   font-size: 14px;
   font-weight: bold;
-  margin: 0px 20px 0px 0px;
+  margin: 0px 10px 0px 0px;
 }
 .starters--check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 10px;
+  border-radius: 0px 15px 15px 0px;
+  position: absolute;
+  padding: 20px;
+  top: 0px;
   opacity: 0;
+  transition: transform 332ms ease-in-out;
+  z-index: -2;
 }
 
 .dishes {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 30%;
   height: 100%;
   margin: 30px 0px 0px 14px;
-  animation: fadein 1.5s ease-in-out;
+  animation: fadein 1s ease-in-out;
 }
 @media (max-width: 759px) {
   .dishes {
@@ -240,8 +270,12 @@
   padding-bottom: 5px;
 }
 .dishes--art {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
   width: 93%;
-  height: 5%;
+  height: 72px;
   margin-top: 12px;
   border: 1px hidden;
   border-radius: 15px;
@@ -249,46 +283,72 @@
   box-shadow: 0 2px 5px #b7b7b7;
   transition: all 250ms;
 }
-@media (max-width: 759px) {
-  .dishes--art {
-    height: 70px;
-  }
-}
 .dishes--art:hover {
   transform: scale(1.02);
   box-shadow: 0 4px 5px #848484;
+}
+.dishes--art:hover .fas.fa-check-circle {
+  transform: rotate(360deg);
+}
+.dishes--art:hover .dishes--price {
+  transition-duration: 502ms;
+  padding-right: 50px;
+}
+.dishes--art:hover .dishes--check {
+  right: -50px;
+  transform: translate(-50px);
+  opacity: 1;
+  z-index: 1;
 }
 .dishes--arttitle {
   font-family: "roboto", sans-serif;
   font-size: 16px;
   margin: 15px 0px 5px 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .dishes--div {
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 .dishes--description {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   font-family: "roboto", sans-serif;
   font-size: 14px;
-  margin: 0px 0px 0px 10px;
+  margin: 0px 0px 10px 10px;
 }
 .dishes--price {
   font-family: "roboto", sans-serif;
   font-size: 14px;
   font-weight: bold;
-  margin: 0px 20px 0px 0px;
+  margin: 0px 10px 0px 0px;
 }
 .dishes--check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 10px;
+  border-radius: 0px 15px 15px 0px;
+  position: absolute;
+  padding: 20px;
+  top: 0px;
   opacity: 0;
+  transition: transform 332ms ease-in-out;
+  z-index: -2;
 }
 
 .dessert {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 30%;
   height: 100%;
   margin: 30px 0px 0px 14px;
-  animation: fadein 2s ease-in-out;
+  animation: fadein 1s ease-in-out;
 }
 @media (max-width: 759px) {
   .dessert {
@@ -304,8 +364,12 @@
   padding-bottom: 5px;
 }
 .dessert--art {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
   width: 93%;
-  height: 5%;
+  height: 72px;
   margin-top: 12px;
   border: 1px hidden;
   border-radius: 15px;
@@ -313,37 +377,70 @@
   box-shadow: 0 2px 5px #b7b7b7;
   transition: all 250ms;
 }
-@media (max-width: 759px) {
-  .dessert--art {
-    height: 70px;
-  }
-}
 .dessert--art:hover {
   transform: scale(1.02);
   box-shadow: 0 4px 5px #848484;
+}
+.dessert--art:hover .fas.fa-check-circle {
+  transform: rotate(360deg);
+}
+.dessert--art:hover .dessert--price {
+  transition-duration: 502ms;
+  padding-right: 50px;
+}
+.dessert--art:hover .dessert--check {
+  right: -50px;
+  transform: translate(-50px);
+  opacity: 1;
+  z-index: 1;
 }
 .dessert--arttitle {
   font-family: "roboto", sans-serif;
   font-size: 16px;
   margin: 15px 0px 5px 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .dessert--div {
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 .dessert--description {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   font-family: "roboto", sans-serif;
   font-size: 14px;
-  margin: 0px 0px 0px 10px;
+  margin: 0px 0px 10px 10px;
 }
 .dessert--price {
   font-family: "roboto", sans-serif;
   font-size: 14px;
   font-weight: bold;
-  margin: 0px 20px 0px 0px;
+  margin: 0px 10px 0px 0px;
 }
 .dessert--check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 10px;
+  border-radius: 0px 15px 15px 0px;
+  position: absolute;
+  padding: 20px;
+  top: 0px;
   opacity: 0;
+  transition: transform 332ms ease-in-out;
+  z-index: -2;
+}
+
+.fas.fa-check-circle {
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+  transition: transform 502ms ease-in-out;
 }
 
 .order--button {
