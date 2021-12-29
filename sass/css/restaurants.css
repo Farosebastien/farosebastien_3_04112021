@@ -39,10 +39,11 @@
 }
 @keyframes fadein {
   0% {
-    transform: scale(0.9);
+    transform: translate3d(0, 25px, 0);
     opacity: 0;
   }
   50% {
+    transform: translate3d(0, 0, 0);
     opacity: 0.5;
   }
   100% {
@@ -185,6 +186,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  overflow: hidden;
   width: 93%;
   height: 72px;
   margin-top: 12px;
@@ -278,6 +280,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  overflow: hidden;
   width: 93%;
   height: 72px;
   margin-top: 12px;
@@ -371,6 +374,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  overflow: hidden;
   width: 93%;
   height: 72px;
   margin-top: 12px;
@@ -440,7 +444,7 @@ a {
 
 .iconmenu {
   margin-left: 50px;
-  font-size: 20px;
+  font-size: 24px;
   cursor: pointer;
 }
 @media (max-width: 759px) {
@@ -451,7 +455,7 @@ a {
 
 .fas.fa-heart {
   position: relative;
-  left: -25px;
+  left: -30px;
   opacity: 0;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;

@@ -1,6 +1,6 @@
 .iconmenu{
     margin-left: 50px;
-    font-size: 20px;
+    font-size: 24px;
     cursor: pointer;
     @include mobile-only(){
         margin: 0px 38px 0px 0px;
@@ -8,7 +8,7 @@
 }
 .fas.fa-heart{
     position: relative;
-    left: -25px;
+    left: -30px;
     opacity: 0;
     background: -webkit-linear-gradient($primary, $secondary);
     -webkit-background-clip: text;
